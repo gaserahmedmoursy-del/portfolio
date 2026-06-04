@@ -8,7 +8,7 @@ A modern, responsive portfolio website for Gaser Ahmed Morsy — Mechatronics & 
 
 ### Design
 - **Clean, Modern Style**: Dark background (#0a0e27) with white text and neon blue accents (#00d4ff)
-- **Animated Background**: Subtle geometric/circuit-line animations for a futuristic tech feel
+- **Animated Background**: Subtle geometric/circuit-line animations for a futuristic tech feel with balck feeling 
 - **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
 - **Interactive Elements**: Hover effects on buttons, project cards, and navigation
 
