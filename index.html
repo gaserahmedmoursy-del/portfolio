@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaser Ahmed Morsy - Mechatronics & Robotics Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">GAM</div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">01 Home</a></li>
+                <li><a href="#about" class="nav-link">02 About</a></li>
+                <li><a href="#projects" class="nav-link">03 Projects</a></li>
+                <li><a href="#skills" class="nav-link">04 Skills</a></li>
+                <li><a href="#solidworks" class="nav-link">05 SolidWorks</a></li>
+                <li><a href="#internships" class="nav-link">06 Internships</a></li>
+                <li><a href="#contact" class="nav-link">07 Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Gaser Ahmed Morsy</h1>
+            <p class="hero-subtitle">Mechatronics & Robotics Engineer</p>
+            <p class="hero-description">Engineering robotics, electronics, and innovative systems.</p>
+            <div class="hero-buttons">
+                <a href="mailto:gaserahmedmours@gmail.com" class="btn btn-primary">Contact Me</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <a href="https://docs.google.com/uc?export=download&id=1NtF3ocFjiqdWyofUuP3Bf6kHK4jJKaFU" class="btn btn-secondary" download>Download CV</a>
+                <a href="#solidworks" class="btn btn-secondary">SolidWorks Designs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                I am a passionate Mechatronics and Robotics Engineer with expertise in designing, building, and programming robotic systems. 
+                With a strong foundation in electronics, CAD design, and embedded systems, I bring innovative solutions to complex engineering challenges.
+            </p>
+            <p class="about-text">
+                My experience spans industrial robot training, power electronics, and system integration. I am committed to continuous learning 
+                and delivering high-quality engineering solutions that push the boundaries of what's possible.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 01: Variable DC Power Supply -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-placeholder">Variable DC Power Supply</div>
+                        <input type="file" id="project1-image" class="image-upload-input" accept="image/*" onchange="handleImageUpload(event, 'project1-image-display')">
+                        <label for="project1-image" class="image-upload-label">📷 Upload Photo</label>
+                    </div>
+                    <img id="project1-image-display" class="project-image" style="display:none;" alt="Variable DC Power Supply">
+                    <div class="project-content">
+                        <h3 class="project-title">Variable DC Power Supply</h3>
+                        <p class="project-description">
+                            Designed and built a regulated DC power supply with adjustable voltage and current limiting features.
+                            Implemented precision control circuits for stable power delivery across multiple applications.
+                        </p>
+                        <div class="project-gallery" id="project1-gallery"></div>
+                    </div>
+                </div>
+
+                <!-- Project 02: Digital Clock -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-placeholder">Digital Clock</div>
+                        <input type="file" id="project2-image" class="image-upload-input" accept="image/*" onchange="handleImageUpload(event, 'project2-image-display')">
+                        <label for="project2-image" class="image-upload-label">📷 Upload Photo</label>
+                    </div>
+                    <img id="project2-image-display" class="project-image" style="display:none;" alt="Digital Clock">
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Clock</h3>
+                        <p class="project-description">
+                            Created a digital clock using embedded systems and microcontroller programming.
+                            Features real-time display with precision timekeeping and multiple display modes.
+                        </p>
+                        <div class="project-gallery" id="project2-gallery"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-badge">SolidWorks</span> <span class="skill-level">(Advanced)</span></li>
+                        <li><span class="skill-badge">MATLAB</span></li>
+                        <li><span class="skill-badge">Arduino</span></li>
+                        <li><span class="skill-badge">C/C++</span></li>
+                        <li><span class="skill-badge">Electronics & Power Electronics</span></li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-badge">Leadership</span></li>
+                        <li><span class="skill-badge">Teamwork</span></li>
+                        <li><span class="skill-badge">Communication</span></li>
+                        <li><span class="skill-badge">Problem Solving</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SolidWorks Section -->
+    <section id="solidworks" class="solidworks">
+        <div class="container">
+            <h2 class="section-title">SolidWorks Designs</h2>
+            <p class="section-description">Showcasing my CAD modeling and design expertise</p>
+            <div class="solidworks-gallery" id="solidworksGallery">
+                <div class="gallery-item add-item">
+                    <input type="file" id="solidworks-image-input" class="image-upload-input" accept="image/*" onchange="handleSolidWorksUpload(event)">
+                    <label for="solidworks-image-input" class="gallery-upload-label">+ Add Design</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <h2 class="section-title">Internships & Experience</h2>
+            <div class="internship-cards">
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <h3 class="internship-title">KUKA Robot Training</h3>
+                        <span class="internship-duration">Industrial Experience</span>
+                    </div>
+                    <p class="internship-description">
+                        Completed comprehensive training in industrial robot operation and programming using KUKA systems.
+                        Gained hands-on experience with robotic automation, teach pendant programming, and safety protocols.
+                    </p>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <h3 class="internship-title">Human Resource Recruitment</h3>
+                        <span class="internship-duration">10 Months - Team Leader</span>
+                    </div>
+                    <p class="internship-description">
+                        Led recruitment initiatives and team coordination for human resource operations.
+                        Managed candidate screening, interview processes, and onboarding procedures while developing leadership and communication skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-text">Let's discuss your next project or collaboration opportunity.</p>
+                    <div class="contact-links">
+                        <a href="mailto:gaserahmedmours@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i> gaserahmedmours@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/gaser-ahmed-0557013ab/" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Gaser Ahmed Morsy. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
