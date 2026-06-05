@@ -3,213 +3,638 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaser Ahmed Morsy - Mechatronics & Robotics Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Gaser Ahmed Morsy | Mechatronics & Robotics Engineer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="background-animation"></div>
-
-    <!-- Navigation Bar -->
+    <!-- Particle Background -->
+    <div class="particles-container" id="particlesContainer"></div>
+    
+    <!-- Animated Gradient Background -->
+    <div class="gradient-bg"></div>
+    
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="navbar-container">
-            <div class="logo">GAM</div>
-            <button class="hamburger" id="hamburger">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-icon">◆</div>
+                <span class="logo-text">Gaser Ahmed</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">01 Home</a></li>
-                <li><a href="#about" class="nav-link">02 About</a></li>
-                <li><a href="#projects" class="nav-link">03 Projects</a></li>
-                <li><a href="#skills" class="nav-link">04 Skills</a></li>
-                <li><a href="#solidworks" class="nav-link">05 SolidWorks</a></li>
-                <li><a href="#internships" class="nav-link">06 Internships</a></li>
-                <li><a href="#contact" class="nav-link">07 Contact</a></li>
-            </ul>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="theme-toggle" id="themeToggle">
+                <span class="theme-icon">☀️</span>
+            </div>
         </div>
     </nav>
-
+    
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Gaser Ahmed Morsy</h1>
-            <p class="hero-subtitle">Mechatronics & Robotics Engineer</p>
-            <p class="hero-description">Engineering robotics, electronics, and innovative systems.</p>
-            <div class="hero-buttons">
-                <a href="mailto:gaserahmedmours@gmail.com" class="btn btn-primary">Contact Me</a>
-                <a href="#projects" class="btn btn-secondary">View Projects</a>
-                <a href="https://docs.google.com/uc?export=download&id=1NtF3ocFjiqdWyofUuP3Bf6kHK4jJKaFU" class="btn btn-secondary" download>Download CV</a>
-                <a href="#solidworks" class="btn btn-secondary">SolidWorks Designs</a>
+            <div class="hero-text">
+                <div class="hero-label">Welcome to my portfolio</div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Gaser Ahmed Morsy</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Mechatronics & Robotics <span class="accent">Engineer</span>
+                </h2>
+                <p class="hero-description">
+                    Transforming ideas into intelligent systems. Passionate about robotics, automation, 
+                    and industrial innovation. Aspiring Field Engineer ready to tackle advanced 
+                    engineering challenges.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Skills</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Months Experience</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/file/d/YOUR_CV_ID/view" target="_blank" class="btn btn-primary">
+                        <span>Download CV</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 1v12m5-5l-5 5-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get in Touch</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 5.5l8 5 8-5M2 5h16a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2v-8a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="robot-container">
+                    <div class="robot">
+                        <div class="robot-head">
+                            <div class="robot-eye"></div>
+                            <div class="robot-eye"></div>
+                        </div>
+                        <div class="robot-body"></div>
+                        <div class="robot-arm robot-arm-left"></div>
+                        <div class="robot-arm robot-arm-right"></div>
+                    </div>
+                </div>
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
             </div>
         </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+            <span>Scroll to explore</span>
+        </div>
     </section>
-
+    
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="about-text">
-                I am a passionate Mechatronics and Robotics Engineer with expertise in designing, building, and programming robotic systems. 
-                With a strong foundation in electronics, CAD design, and embedded systems, I bring innovative solutions to complex engineering challenges.
-            </p>
-            <p class="about-text">
-                My experience spans industrial robot training, power electronics, and system integration. I am committed to continuous learning 
-                and delivering high-quality engineering solutions that push the boundaries of what's possible.
-            </p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 01: Variable DC Power Supply -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div class="project-placeholder">Variable DC Power Supply</div>
-                        <input type="file" id="project1-image" class="image-upload-input" accept="image/*" onchange="handleImageUpload(event, 'project1-image-display')">
-                        <label for="project1-image" class="image-upload-label">📷 Upload Photo</label>
-                    </div>
-                    <img id="project1-image-display" class="project-image" style="display:none;" alt="Variable DC Power Supply">
-                    <div class="project-content">
-                        <h3 class="project-title">Variable DC Power Supply</h3>
-                        <p class="project-description">
-                            Designed and built a regulated DC power supply with adjustable voltage and current limiting features.
-                            Implemented precision control circuits for stable power delivery across multiple applications.
-                        </p>
-                        <div class="project-gallery" id="project1-gallery"></div>
+            <div class="section-header">
+                <div class="section-label">01</div>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a passionate <strong>Mechatronics & Robotics Engineering student</strong> 
+                        with a deep interest in industrial automation and intelligent systems. My journey 
+                        combines hands-on robotics experience, CAD design expertise, and a proven track record 
+                        of leadership.
+                    </p>
+                    <p class="about-paragraph">
+                        My goal is to become a <strong>Field Engineer</strong> contributing to cutting-edge 
+                        automation projects at industry leaders like BMW, Siemens, and Tesla. I excel at 
+                        transforming complex engineering challenges into elegant, functional solutions.
+                    </p>
+                    
+                    <div class="highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚙️</span>
+                            <div>
+                                <h4>Industrial Focus</h4>
+                                <p>KUKA robotics, automation systems, industrial integration</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🔧</span>
+                            <div>
+                                <h4>Technical Skills</h4>
+                                <p>SolidWorks CAD, MATLAB programming, system design</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">👥</span>
+                            <div>
+                                <h4>Leadership</h4>
+                                <p>Team management, recruitment, technical mentorship</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Project 02: Digital Clock -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div class="project-placeholder">Digital Clock</div>
-                        <input type="file" id="project2-image" class="image-upload-input" accept="image/*" onchange="handleImageUpload(event, 'project2-image-display')">
-                        <label for="project2-image" class="image-upload-label">📷 Upload Photo</label>
-                    </div>
-                    <img id="project2-image-display" class="project-image" style="display:none;" alt="Digital Clock">
-                    <div class="project-content">
-                        <h3 class="project-title">Digital Clock</h3>
-                        <p class="project-description">
-                            Created a digital clock using embedded systems and microcontroller programming.
-                            Features real-time display with precision timekeeping and multiple display modes.
-                        </p>
-                        <div class="project-gallery" id="project2-gallery"></div>
+                
+                <div class="about-image">
+                    <div class="image-frame glass-effect">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="200" cy="200" r="150" fill="url(#grad1)" stroke="#00d4ff" stroke-width="2"/>
+                                <circle cx="200" cy="120" r="40" fill="#00d4ff" opacity="0.2"/>
+                                <rect x="140" y="160" width="120" height="100" fill="#3b82f6" opacity="0.1" rx="10"/>
+                                <circle cx="170" cy="180" r="8" fill="#00d4ff" opacity="0.6"/>
+                                <circle cx="230" cy="180" r="8" fill="#00d4ff" opacity="0.6"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="section skills-section">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <div class="section-header">
+                <div class="section-label">02</div>
+                <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
             <div class="skills-grid">
-                <div class="skills-category">
-                    <h3 class="skills-category-title">Technical Skills</h3>
-                    <ul class="skills-list">
-                        <li><span class="skill-badge">SolidWorks</span> <span class="skill-level">(Advanced)</span></li>
-                        <li><span class="skill-badge">MATLAB</span></li>
-                        <li><span class="skill-badge">Arduino</span></li>
-                        <li><span class="skill-badge">C/C++</span></li>
-                        <li><span class="skill-badge">Electronics & Power Electronics</span></li>
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3 class="skills-category-title">Soft Skills</h3>
-                    <ul class="skills-list">
-                        <li><span class="skill-badge">Leadership</span></li>
-                        <li><span class="skill-badge">Teamwork</span></li>
-                        <li><span class="skill-badge">Communication</span></li>
-                        <li><span class="skill-badge">Problem Solving</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SolidWorks Section -->
-    <section id="solidworks" class="solidworks">
-        <div class="container">
-            <h2 class="section-title">SolidWorks Designs</h2>
-            <p class="section-description">Showcasing my CAD modeling and design expertise</p>
-            <div class="solidworks-gallery" id="solidworksGallery">
-                <div class="gallery-item add-item">
-                    <input type="file" id="solidworks-image-input" class="image-upload-input" accept="image/*" onchange="handleSolidWorksUpload(event)">
-                    <label for="solidworks-image-input" class="gallery-upload-label">+ Add Design</label>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Internships Section -->
-    <section id="internships" class="internships">
-        <div class="container">
-            <h2 class="section-title">Internships & Experience</h2>
-            <div class="internship-cards">
-                <div class="internship-card">
-                    <div class="internship-header">
-                        <h3 class="internship-title">KUKA Robot Training</h3>
-                        <span class="internship-duration">Industrial Experience</span>
+                <div class="skill-card glass-effect">
+                    <div class="skill-header">
+                        <h3>SolidWorks</h3>
+                        <span class="skill-level">Advanced</span>
                     </div>
-                    <p class="internship-description">
-                        Completed comprehensive training in industrial robot operation and programming using KUKA systems.
-                        Gained hands-on experience with robotic automation, teach pendant programming, and safety protocols.
-                    </p>
-                </div>
-
-                <div class="internship-card">
-                    <div class="internship-header">
-                        <h3 class="internship-title">Human Resource Recruitment</h3>
-                        <span class="internship-duration">10 Months - Team Leader</span>
+                    <p>Professional CAD design, 3D modeling, simulations</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%" data-value="90"></div>
                     </div>
-                    <p class="internship-description">
-                        Led recruitment initiatives and team coordination for human resource operations.
-                        Managed candidate screening, interview processes, and onboarding procedures while developing leadership and communication skills.
-                    </p>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                
+                <div class="skill-card glass-effect">
+                    <div class="skill-header">
+                        <h3>Robotics</h3>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <p>KUKA programming, automation systems, kinematics</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%" data-value="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                
+                <div class="skill-card glass-effect">
+                    <div class="skill-header">
+                        <h3>MATLAB</h3>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <p>Algorithm development, data analysis, simulations</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%" data-value="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                
+                <div class="skill-card glass-effect">
+                    <div class="skill-header">
+                        <h3>Problem Solving</h3>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <p>Complex systems analysis, optimization, troubleshooting</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 95%" data-value="95"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                
+                <div class="skill-card glass-effect">
+                    <div class="skill-header">
+                        <h3>Automation</h3>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <p>Industrial automation, PLC systems, control integration</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%" data-value="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                
+                <div class="skill-card glass-effect">
+                    <div class="skill-header">
+                        <h3>Kinematics</h3>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <p>Forward/inverse kinematics, motion planning, dynamics</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 82%" data-value="82"></div>
+                    </div>
+                    <span class="skill-percentage">82%</span>
+                </div>
+                
+                <div class="skill-card glass-effect">
+                    <div class="skill-header">
+                        <h3>Team Leadership</h3>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <p>Project coordination, team management, mentoring</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 88%" data-value="88"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+                
+                <div class="skill-card glass-effect">
+                    <div class="skill-header">
+                        <h3>Artificial Intelligence</h3>
+                        <span class="skill-level">Beginner</span>
+                    </div>
+                    <p>Machine learning basics, AI integration, intelligent systems</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%" data-value="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
                 </div>
             </div>
         </div>
     </section>
-
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">03</div>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card glass-effect" data-project="1">
+                    <div class="project-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="projGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="200" fill="url(#projGrad1)" stroke="#00d4ff" stroke-width="1"/>
+                            <rect x="60" y="40" width="180" height="120" fill="none" stroke="#00d4ff" stroke-width="2" rx="5"/>
+                            <circle cx="100" cy="80" r="8" fill="#00d4ff" opacity="0.7"/>
+                            <circle cx="150" cy="100" r="12" fill="#3b82f6" opacity="0.6"/>
+                            <circle cx="200" cy="90" r="8" fill="#00d4ff" opacity="0.7"/>
+                            <line x1="60" y1="150" x2="240" y2="150" stroke="#00d4ff" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tag">Electronics</div>
+                        <h3>Variable DC Power Supply</h3>
+                        <p>Designed and built an adjustable DC power supply with precise voltage regulation, protection circuits, and professional PCB layout.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Circuit Design</span>
+                            <span class="tech-tag">PCB Layout</span>
+                            <span class="tech-tag">Electronics</span>
+                        </div>
+                    </div>
+                    <button class="btn-view" onclick="openProjectModal(1)">View Details</button>
+                </div>
+                
+                <div class="project-card glass-effect" data-project="2">
+                    <div class="project-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="projGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="200" fill="url(#projGrad2)" stroke="#00d4ff" stroke-width="1"/>
+                            <g transform="translate(150, 100)">
+                                <rect x="-40" y="-50" width="80" height="100" fill="none" stroke="#00d4ff" stroke-width="2" rx="3"/>
+                                <circle cx="-20" cy="-30" r="8" fill="#00d4ff" opacity="0.7"/>
+                                <circle cx="20" cy="-30" r="8" fill="#00d4ff" opacity="0.7"/>
+                                <rect x="-35" y="20" width="70" height="25" fill="#3b82f6" opacity="0.3" stroke="#00d4ff" stroke-width="1"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tag">Robotics</div>
+                        <h3>Industrial Robotic System</h3>
+                        <p>Developed KUKA robot automation concepts with advanced programming, control algorithms, and industrial integration protocols.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">KUKA Programming</span>
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">Control Systems</span>
+                        </div>
+                    </div>
+                    <button class="btn-view" onclick="openProjectModal(2)">View Details</button>
+                </div>
+                
+                <div class="project-card glass-effect" data-project="3">
+                    <div class="project-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="projGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.4" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="200" fill="url(#projGrad3)" stroke="#00d4ff" stroke-width="1"/>
+                            <g transform="translate(150, 100)">
+                                <polygon points="0,-40 35,20 -35,20" fill="none" stroke="#00d4ff" stroke-width="2"/>
+                                <rect x="-30" y="15" width="60" height="40" fill="none" stroke="#3b82f6" stroke-width="2" rx="3"/>
+                                <circle cx="-15" cy="50" r="6" fill="#00d4ff" opacity="0.6"/>
+                                <circle cx="15" cy="50" r="6" fill="#00d4ff" opacity="0.6"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tag">Mechanical Design</div>
+                        <h3>Mechanical Design Project</h3>
+                        <p>Created comprehensive CAD models and FEA simulations using SolidWorks with detailed engineering documentation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SolidWorks</span>
+                            <span class="tech-tag">FEA Simulation</span>
+                            <span class="tech-tag">Design</span>
+                        </div>
+                    </div>
+                    <button class="btn-view" onclick="openProjectModal(3)">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Timeline -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">04</div>
+                <h2 class="section-title">Professional <span class="accent">Experience</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-effect">
+                        <div class="timeline-header">
+                            <h3>KUKA Robot Training</h3>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <p class="timeline-role">Industrial Robotics Specialist</p>
+                        <ul class="timeline-skills">
+                            <li>Industrial robot programming and operation</li>
+                            <li>Advanced automation systems configuration</li>
+                            <li>Robot kinematics and motion planning</li>
+                            <li>Safety protocols and system integration</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-effect">
+                        <div class="timeline-header">
+                            <h3>IEEE Volunteer</h3>
+                            <span class="timeline-date">2023-2024</span>
+                        </div>
+                        <p class="timeline-role">Technical Mentor & Project Lead</p>
+                        <ul class="timeline-skills">
+                            <li>Mentored students in robotics project development</li>
+                            <li>Organized and led engineering activities</li>
+                            <li>Coordinated technical workshops and competitions</li>
+                            <li>Managed multi-disciplinary engineering teams</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-effect">
+                        <div class="timeline-header">
+                            <h3>HR Team Leader</h3>
+                            <span class="timeline-date">10 Months</span>
+                        </div>
+                        <p class="timeline-role">Human Resources & Team Management</p>
+                        <ul class="timeline-skills">
+                            <li>Led recruitment and candidate interview processes</li>
+                            <li>Managed team operations and performance</li>
+                            <li>Implemented HR strategies and initiatives</li>
+                            <li>Developed leadership and communication skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">05</div>
+                <h2 class="section-title">Certifications & <span class="accent">Awards</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="cert-card glass-effect">
+                    <div class="cert-icon">📜</div>
+                    <h3>KUKA Industrial Robotics</h3>
+                    <p>Professional certification in KUKA robot programming and industrial automation systems.</p>
+                    <span class="cert-date">2024</span>
+                </div>
+                
+                <div class="cert-card glass-effect">
+                    <div class="cert-icon">🏆</div>
+                    <h3>IEEE Technical Excellence</h3>
+                    <p>Recognition for outstanding contribution to student engineering initiatives and mentorship.</p>
+                    <span class="cert-date">2024</span>
+                </div>
+                
+                <div class="cert-card glass-effect">
+                    <div class="cert-icon">⚙️</div>
+                    <h3>CAD Design Proficiency</h3>
+                    <p>Advanced certification in SolidWorks 3D modeling, simulation, and design optimization.</p>
+                    <span class="cert-date">2023</span>
+                </div>
+                
+                <div class="cert-card glass-effect">
+                    <div class="cert-icon">👥</div>
+                    <h3>Leadership Certificate</h3>
+                    <p>Professional leadership training with focus on team management and organizational skills.</p>
+                    <span class="cert-date">2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <div class="section-label">06</div>
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
             <div class="contact-content">
-                <div class="contact-info">
-                    <p class="contact-text">Let's discuss your next project or collaboration opportunity.</p>
-                    <div class="contact-links">
-                        <a href="mailto:gaserahmedmours@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i> gaserahmedmours@gmail.com
+                <div class="contact-info glass-effect">
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:gaser.morsy@example.com">gaser.morsy@example.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+201000000000">+20 100 000 0000</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Egypt</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Follow Me</h3>
+                    <div class="social-grid">
+                        <a href="https://linkedin.com/in/gaser-morsy" target="_blank" class="social-btn glass-effect" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                            </svg>
+                            LinkedIn
                         </a>
-                        <a href="https://www.linkedin.com/in/gaser-ahmed-0557013ab/" target="_blank" class="contact-link">
-                            <i class="fab fa-linkedin"></i> LinkedIn Profile
+                        
+                        <a href="https://github.com/gaser-morsy" target="_blank" class="social-btn glass-effect" title="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        
+                        <a href="https://twitter.com/gaser_morsy" target="_blank" class="social-btn glass-effect" title="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7a10.6 10.6 0 01-9-5.5z"/>
+                            </svg>
+                            Twitter
+                        </a>
+                        
+                        <a href="mailto:gaser.morsy@example.com" class="social-btn glass-effect" title="Email">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            Email
                         </a>
                     </div>
                 </div>
             </div>
+            
+            <div class="cta-box glass-effect">
+                <h3>Ready to collaborate?</h3>
+                <p>I'm open to exciting opportunities in robotics, automation, and industrial engineering. Let's build something remarkable together!</p>
+                <a href="mailto:gaser.morsy@example.com" class="btn btn-primary btn-large">
+                    <span>Send Me a Message</span>
+                </a>
+            </div>
         </div>
     </section>
-
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Gaser Ahmed Morsy. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Gaser Ahmed Morsy</h4>
+                    <p>Mechatronics & Robotics Engineer | Innovation Enthusiast</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li>SolidWorks</li>
+                        <li>MATLAB</li>
+                        <li>KUKA Robotics</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gaser Ahmed Morsy. All rights reserved.</p>
+                <p>Designed & Developed with precision and passion.</p>
             </div>
         </div>
     </footer>
-
+    
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content glass-effect">
+            <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
